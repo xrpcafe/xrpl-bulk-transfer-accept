@@ -45,7 +45,9 @@ async function main() {
             let accountObjects = await client.request(AccountObjectsPayload(marker));
             for (let i = 0; i < accountObjects.result.account_objects.length; i++) {
                 if (accountObjects.result.account_objects[i].LedgerEntryType == "NFTokenOffer") {
-                    if (accountObjects.result.account_objects[i].Destination != undefined &&
+                    if (accountObjects.result.account_objects[i].Flags != undefined &&
+                        accountObjects.result.account_objects[i].Flags == 1 &&
+                        accountObjects.result.account_objects[i].Destination != undefined &&
                         accountObjects.result.account_objects[i].Destination == xrp_account &&
                         accountObjects.result.account_objects[i].Amount == "0") {
                         offerObjects.push(accountObjects.result.account_objects[i]);
