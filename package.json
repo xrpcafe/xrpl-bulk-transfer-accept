@@ -1,0 +1,15 @@
+{
+  "name": "xrpl-bulk-transfer-accept",
+  "version": "1.0.0",
+  "description": "bulk transfer NFTs on the xrpl",
+  "main": "transfer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xrp.cafe",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.8",
+    "xrpl": "^2.8.0-beta.0"
+  }
+}

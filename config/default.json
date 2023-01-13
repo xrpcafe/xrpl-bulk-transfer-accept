@@ -1,0 +1,12 @@
+{
+    "XRPL_Server": "wss://s.altnet.rippletest.net:51233/",
+    "Account" : "rL8RMQZhA1Wycu8AP4cNLEQRCthuwARsPs",
+    "Secret_Key" : "",
+    "Transfer":
+    {
+        "Issuer":"rL8RMQZhA1Wycu8AP4cNLEQRCthuwARsPs",
+        "Taxon": 0,
+        "Destination": "rse34sdZApS8CfDVNaYM41UoZ1rFDRpD5c",
+        "Expiration": "2023-01-22 00:00:00"
+    }
+  }
