@@ -54,7 +54,7 @@ async function main() {
                     }
                 }
             }
-            marker = accountObjects.marker;
+            marker = accountObjects.result.marker;
         } while (marker != undefined);
     } catch (err) {
         console.log('Error getting offers: ' + err);
